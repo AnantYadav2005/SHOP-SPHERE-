@@ -1,0 +1,65 @@
+.diva{
+    display: flex;
+   gap: 32px;
+ margin-right: 1cm; 
+ border: solid 3px rgb(22, 22, 22); 
+ width: fit-content;
+ padding: 5px;
+padding-bottom:50px ;
+background: #5bb0a9ad;
+}
+.add:hover{
+
+    background-color: black;
+  
+}
+.add{
+width: 120px;
+height: 25px;
+background: #033e3aa4;
+ border-radius:25px; 
+ text-align: center;
+ border: solid 2px  white;
+ color: aliceblue;
+ text-align: center;
+}
+pre{
+    font-weight: 900;
+    font-size: 14px;
+     margin-bottom:0px ; 
+    /* line-height:20px ;  */
+}
+.price{
+    font-size: 14px;
+    margin-bottom: 20px;
+ margin-top: 0px; 
+  
+
+}
+.orginal-price{
+    text-decoration: line-through;
+}
+.discount-price{
+     font-weight: 900;
+     color: black;
+}
+.discount{
+   border: 1px solid gray;
+   padding: 2px 5px;
+   font-size: 14px;
+   color: gray;
+}
+img {
+    width: 210px;
+    height: 265px;
+    border-radius: 8px; /* Optional: to round corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1); /* Makes the image slightly larger */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+.cart{
+    color: white;
+}

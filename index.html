@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP SPHERE | Home</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+            background-color: #924747;
+            color: #924747;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #5bb0a9ad;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero-banner {
+            /* background-color: #924747; */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            object-fit: cover;
+        }
+        /* .logo{
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        } */
+
+        /* Categories Section */
+        .categories {
+            padding: 30px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .categories h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .category:hover {
+            background-color: #5bb0a9ad;
+            color: white;
+        }
+
+        /* Featured Products Section */
+        .featured {
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">SHOP SPHERE</div>
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search for products..." oninput="searchProducts()">
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="http://127.0.0.1:5500/back%20and%20login.html">Login</a>
+            <a href="http://127.0.0.1:5500/profile.html">Profile</a>
+            <a href="http://127.0.0.1:5500/cart.html">Cart (0)</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <div class="hero-banner"  >Welcome to OUR SHOP SPHERE</div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-grid">
+            <div class="category" onclick="window.location.href='http://127.0.0.1:5500/book.html'">Books</div>
+            <div class="category" onclick="window.location.href='http://127.0.0.1:5500/fashion.html'">Fashion</div>
+            <div class="category" onclick="window.location.href='#'">Electronics</div>
+            <div class="category" onclick="window.location.href='#'">Food</div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        // JavaScript for Search Functionality
+        function searchProducts() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            console.log("Searching for:", query);
+            // This could be enhanced to show real-time search suggestions or trigger an API call.
+        }
+
+        // JavaScript to simulate product view on click
+        function viewProduct(productName) {
+            alert('You clicked on: ' + productName);
+            // Replace this with actual product detail page or modal.
+        }
+    </script>
+</body>
+</html>
+
+  

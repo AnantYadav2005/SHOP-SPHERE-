@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .form-actions button {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #4caf4faf;
+            color: white;
+        }
+
+        .delete-btn {
+            background-color: #f44336c8;
+            color: white;
+        }
+
+        .back-btn {
+            background-color: #1f7dcb;
+            color: white;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .delete-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .back-btn:hover {
+            background-color: #1976D2;
+        }
+
+        .back-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="delete-btn">Delete Account</button>
+            </div>
+        </form>
+        <div class="back-container">
+            <button type="button" class="back-btn" onclick="history.back()"> <a href="http://127.0.0.1:5500/wd.html">Back</a></button>
+        </div>
+    </div>
+</body>
+</html>
